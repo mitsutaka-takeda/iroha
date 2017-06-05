@@ -35,11 +35,11 @@ void init() {
     // WIP
 }
 
-void append(const iroha::Transaction &tx) {
+void append(const protocol::Transaction &tx) {
     // WIP
 }
 
-const ::iroha::Transaction *getTransaction(size_t index) {
+const protocol::Transaction *getTransaction(size_t index) {
     // WIP
 }
 

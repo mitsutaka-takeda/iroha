@@ -90,7 +90,7 @@ int main(int argc, char* argv[]) {
       &signatureOffset_vec, &hashBlob, datetime::unixtime(),
       iroha::CreateAttachmentDirect(fbb, "none", &dataBlob));
   fbb.Finish(tx_offset);
-  auto tx = flatbuffers::BufferRef<iroha::Transaction>(fbb.GetBufferPointer(),
+  auto tx = flatbuffers::BufferRef<protocol::Transaction>(fbb.GetBufferPointer(),
                                                        fbb.GetSize());
 
   flatbuffers::BufferRef<iroha::Response> response;

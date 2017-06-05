@@ -18,6 +18,7 @@
 #define IROHA_SERVICE_CONNECTION_HPP
 
 #include <functional>
+#include <membership_service/peer_service.hpp>
 
 namespace sumeragi {
 class Block;

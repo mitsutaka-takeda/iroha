@@ -7,5 +7,7 @@ ADD_LIBRARY(builder STATIC
 
 )
 target_link_libraries(
-    flatbuffers
+  builder
+  flatbuffers
+  endpoint_fbs
 )

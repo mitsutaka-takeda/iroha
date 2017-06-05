@@ -54,7 +54,7 @@ namespace sumeragi {
 
     using iroha::ConsensusEvent;
     using iroha::Signature;
-    using iroha::Transaction;
+    using protocol::Transaction;
 
     std::map<std::string, std::string> txCache;
 
@@ -157,7 +157,7 @@ namespace sumeragi {
                     context->printProgress.print(1, "receive transaction!");
 
                     auto eventUniqPtr = flatbuffer_service::toConsensusEvent(
-                            *flatbuffers::GetRoot<::iroha::Transaction>(transaction.get()));
+                            *flatbuffers::GetRoot<protocol::Transaction>(transaction.get()));
 
                     if (eventUniqPtr) {
                         context->printProgress.print(2, "make tx consensusEvent");

@@ -25,6 +25,7 @@ include_directories(
 )
 add_subdirectory(core)
 add_subdirectory(schema)
+add_subdirectory(peer)
 
 link_directories(${PROJECT_BINARY_DIR}/lib)
 

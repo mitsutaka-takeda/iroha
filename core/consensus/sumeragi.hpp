@@ -22,6 +22,8 @@ limitations under the License.
 #include <thread>
 #include <vector>
 
+#include "flatbuffers/flatbuffers.h"
+
 namespace iroha {
 struct ConsensusEvent;
 }

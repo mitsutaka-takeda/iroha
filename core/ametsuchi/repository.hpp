@@ -24,8 +24,8 @@ namespace repository {
 
 
     void init();
-    void append(const iroha::Transaction &tx);
-    const ::iroha::Transaction *getTransaction(size_t index);
+    void append(const protocol::Transaction &tx);
+    const protocol::Transaction *getTransaction(size_t index);
     std::vector<const protocol::Asset *> findAssetByPublicKey();
     bool existAccountOf(const flatbuffers::String &key);
     bool checkUserCanPermission(const flatbuffers::String &key);

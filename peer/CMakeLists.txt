@@ -4,7 +4,7 @@ add_executable(iroha-main
   main.cpp
 )
 target_link_libraries(iroha-main
-  sumeragi
+  block_builder
   connection_with_grpc_flatbuffer
   ed25519
   hash
@@ -12,4 +12,6 @@ target_link_libraries(iroha-main
   thread_pool
   json
   repository
-)
+  logger
+  flatbuffers
+  )
