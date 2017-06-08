@@ -24,7 +24,6 @@ include_directories(
   ${IROHA_SCHEMA_DIR}
 )
 
-include("cmake/dependencies.cmake")
 add_subdirectory(schema)
 add_subdirectory(core)
 add_subdirectory(peer)
